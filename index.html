@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cook an Omelett!</title>
+  </head>
+  <body style="background-color: hsl(30, 54%, 90%)">
+    <style>
+      .main {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 15px;
+        display: block;
+        width: 750px;
+        height: 1400px;
+        margin-top: 80px;
+        margin-left: 580px;
+        margin-right: 500px;
+      }
+      #omelett-img {
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 35px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 15px;
+      }
+      #main-header {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 25px;
+        display: block;
+        color: hsl(24, 5%, 18%);
+      }
+      #desciption1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        display: block;
+        margin-left: 25px;
+        color: hsl(30, 10%, 34%);
+      }
+      .roadmap {
+        display: inline-block;
+        background-color: hsl(330, 100%, 98%);
+        width: 91%;
+        margin-left: 25px;
+        border-radius: 10px;
+      }
+      #roadmap-header {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        margin-left: 20px;
+        color: hsl(332, 51%, 32%);
+      }
+      ul {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        color: hsl(30, 10%, 34%);
+      }
+      #li1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #li2 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #li3 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #first::marker {
+        color: hsl(332, 51%, 32%);
+      }
+      #second::marker {
+        color: hsl(332, 51%, 32%);
+      }
+      #third::marker {
+        color: hsl(332, 51%, 32%);
+      }
+      #ingredients {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 25px;
+        color: hsl(14, 45%, 36%);
+        font-size: 25px;
+      }
+      .list {
+        margin-left: 25px;
+        font-size: 14px;
+      }
+      #first1::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 10px;
+      }
+      #second2::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 10px;
+      }
+      #third3::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 10px;
+      }
+      #fourth4::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 10px;
+      }
+      #fifth5::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 10px;
+      }
+      #bemutatás {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 25px;
+        color: hsl(14, 45%, 36%);
+        font-size: 25px;
+      }
+      .felsorolás {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 14px;
+        color: hsl(30, 10%, 34%);
+      }
+      #a11 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #a22 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #a33 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #a44 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #a55 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      #a66 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        color: hsl(30, 10%, 34%);
+      }
+      .b11::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .b22::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .b33::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .b44::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .b55::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .b66::marker {
+        color: hsl(14, 45%, 36%);
+        font-size: 13px;
+        font-weight: bold;
+      }
+      #header11 {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 25px;
+        color: hsl(14, 45%, 36%);
+        font-size: 25px;
+      }
+      #p1 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        display: block;
+        margin-left: 25px;
+        color: hsl(30, 10%, 34%);
+      }
+      #header22 {
+        margin-left: 50px;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        display: inline;
+        font-size: 16px;
+        color: hsl(30, 10%, 34%);
+      }
+      #descript1 {
+        margin-left: 300px;
+        display: inline;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+      }
+      hr {
+        width: 95%;
+      }
+      #header33 {
+        margin-left: 50px;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 6px;
+        display: inline;
+        font-size: 16px;
+        color: hsl(30, 10%, 34%);
+      }
+      #descript2 {
+        margin-left: 315px;
+        display: inline;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+      }
+      #header44 {
+        margin-left: 50px;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 6px;
+        display: inline;
+        font-size: 16px;
+        color: hsl(30, 10%, 34%);
+      }
+      #descript3 {
+        margin-left: 305px;
+        display: inline;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+      }
+      #header55 {
+        margin-left: 50px;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 6px;
+        display: inline;
+        font-size: 16px;
+        color: hsl(30, 10%, 34%);
+      }
+      #descript4 {
+        margin-left: 332px;
+        display: inline;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+      }
+    </style>
+    <div class="main">
+      <div class="1">
+        <img
+          src="./assets/images/image-omelette.jpeg"
+          alt="juicy omelett"
+          id="omelett-img"
+        />
+        <h1 id="main-header">Simple Omelett Recipe</h1>
+        <p id="desciption1">
+          An easy and quick dish, percfect for any meal. This classic omelett
+          beaten combines beaten eggs cooked to perfection, optionally filled
+          with your choice of cheese, vegetables or meats.
+        </p>
+        <div class="roadmap">
+          <h3 id="roadmap-header">Preparation time</h3>
+          <ul>
+            <li id="first">
+              <span id="li1">Total</span>: Approximately 10 minutes
+            </li>
+            <li id="second"><span id="li2">Preparation</span>: 5 minutes</li>
+            <li id="third"><span id="li3">Cooking</span>: 5 minutes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main2">
+        <h2 id="ingredients">Ingredients</h2>
+        <ul class="list">
+          <li id="first1">2-3 large eggs</li>
+          <li id="second2">Salt, to taste</li>
+          <li id="third3">Pepper, to taste</li>
+          <li id="fourth4">1 tablespoon of butter or oil</li>
+          <li id="fifth5">
+            Otional fillings: cheese, diced vegettables, cooked meats, herbs
+          </li>
+        </ul>
+        <hr style="width: 90%" />
+      </div>
+      <div class="main3">
+        <h2 id="bemutatás">Instructitons</h2>
+        <ol class="felsorolás">
+          <li class="b11" style="margin-bottom: 10px">
+            <span id="a11">Beat the eggs</span>: In a bowl, beat the eggs with a
+            pinch of salt pepper until they are well mixed. You can add a
+            tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li class="b22" style="margin-bottom: 10px">
+            <span id="a22">Heat the pan</span>: Place a non-stick frying pan
+            over medium heat and add butter or oil
+          </li>
+          <li class="b33" style="margin-bottom: 10px">
+            <span id="a33">Cook the omelette</span>: Once the butter is melted
+            and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
+            evenly coat the surface.
+          </li>
+          <li class="b44" style="margin-bottom: 10px">
+            <span id="a44">Add fillings (optional)</span>: When the eggs begin
+            to set at the edges nut are still slightly runny in the middle,
+            sprinkle your chosen fillings over one half of the omelette.
+          </li>
+          <li class="b55" style="margin-bottom: 10px">
+            <span id="a55">Fold and serve</span>: As the omelette continues to
+            cook, carefully lift one edge and fold it over the fillings. Let it
+            cook for another minute, then slide it onto a plate
+          </li>
+          <li class="b66">
+            <span id="a66">Enjoy</span>: Serve hot, with additional salt and
+            pepper if needed
+          </li>
+        </ol>
+      </div>
+      <div class="main4">
+        <h2 id="header11">Nutrition</h2>
+        <p id="p1">
+          The table below shows nutritional calues per serving without the
+          additional fillings.
+        </p>
+        <h3 id="header22">Calories</h3>
+        <h3 id="descript1">277kcal</h3>
+        <hr />
+        <h3 id="header33">Carbs</h3>
+        <h3 id="descript2">0g</h3>
+        <hr />
+        <h3 id="header44">Protein</h3>
+        <h3 id="descript3">20g</h3>
+        <hr />
+        <h3 id="header55">Fat</h3>
+        <h3 id="descript4">22g</h3>
+      </div>
+    </div>
+  </body>
+</html>
